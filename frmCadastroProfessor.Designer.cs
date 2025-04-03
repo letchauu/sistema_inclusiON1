@@ -241,7 +241,7 @@
             this.Controls.Add(this.txtIdProfessor);
             this.Controls.Add(this.label1);
             this.Name = "frmCadastroProfessor";
-            this.Text = "frmCadastroProfessor";
+            this.Text = "Professores";
             this.ResumeLayout(false);
             this.PerformLayout();
 

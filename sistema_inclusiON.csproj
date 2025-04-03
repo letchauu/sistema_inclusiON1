@@ -76,11 +76,47 @@
     <Compile Include="frmAlunos.Designer.cs">
       <DependentUpon>frmAlunos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscadeAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscadeAluno.Designer.cs">
+      <DependentUpon>frmBuscadeAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscadeCuidadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscadeCuidadores.Designer.cs">
+      <DependentUpon>frmBuscadeCuidadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscadeEscola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscadeEscola.Designer.cs">
+      <DependentUpon>frmBuscadeEscola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscadeEstagiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscadeEstagiario.Designer.cs">
+      <DependentUpon>frmBuscadeEstagiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscadeProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscadeProfessores.Designer.cs">
+      <DependentUpon>frmBuscadeProfessores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastrodeAlunoLaudado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadastrodeAlunoLaudado.Designer.cs">
       <DependentUpon>frmCadastrodeAlunoLaudado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastrodeUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrodeUsuario.Designer.cs">
+      <DependentUpon>frmCadastrodeUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCadastroProfessor.cs">
       <SubType>Form</SubType>
@@ -105,6 +141,12 @@
     </Compile>
     <Compile Include="frmEstagiarios.Designer.cs">
       <DependentUpon>frmEstagiarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenudeBusca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenudeBusca.Designer.cs">
+      <DependentUpon>frmMenudeBusca.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenuFormularios.cs">
       <SubType>Form</SubType>
@@ -133,8 +175,26 @@
     <EmbeddedResource Include="frmAlunos.resx">
       <DependentUpon>frmAlunos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscadeAluno.resx">
+      <DependentUpon>frmBuscadeAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscadeCuidadores.resx">
+      <DependentUpon>frmBuscadeCuidadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscadeEscola.resx">
+      <DependentUpon>frmBuscadeEscola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscadeEstagiario.resx">
+      <DependentUpon>frmBuscadeEstagiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscadeProfessores.resx">
+      <DependentUpon>frmBuscadeProfessores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastrodeAlunoLaudado.resx">
       <DependentUpon>frmCadastrodeAlunoLaudado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrodeUsuario.resx">
+      <DependentUpon>frmCadastrodeUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroProfessor.resx">
       <DependentUpon>frmCadastroProfessor.cs</DependentUpon>
@@ -147,6 +207,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstagiarios.resx">
       <DependentUpon>frmEstagiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenudeBusca.resx">
+      <DependentUpon>frmMenudeBusca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuFormularios.resx">
       <DependentUpon>frmMenuFormularios.cs</DependentUpon>
@@ -163,9 +226,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="relatorios\fmrRelEscolas.rdlc" />
     <EmbeddedResource Include="relatorios\frmRelCadAlunoLaudado.resx">
       <DependentUpon>frmRelCadAlunoLaudado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="relatorios\frmRelCids.rdlc" />
+    <EmbeddedResource Include="relatorios\frmRelCuidadores.rdlc" />
+    <EmbeddedResource Include="relatorios\frmRelEstagiarios.rdlc" />
+    <EmbeddedResource Include="relatorios\frmRelProfessor.rdlc" />
     <EmbeddedResource Include="relatorios\relCadAlunoLaudado.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
