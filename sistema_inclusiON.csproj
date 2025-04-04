@@ -225,6 +225,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="relatorios\fmrRelEscolas.rdlc" />
     <EmbeddedResource Include="relatorios\frmRelCadAlunoLaudado.resx">
@@ -250,6 +251,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="imagens\INCLUSION LOGO.png" />
+    <None Include="imagens\aluna.png" />
+    <None Include="imagens\escola.png" />
+    <None Include="imagens\cuidados-de-saude.png" />
+    <None Include="imagens\estagio.png" />
+    <None Include="imagens\professor.png" />
+    <None Include="imagens\relatorio.png" />
+    <None Include="imagens\lupa.png" />
+    <None Include="imagens\cadastro.png" />
+    <None Include="imagens\perfil.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

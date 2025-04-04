@@ -48,77 +48,90 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(107)))), ((int)(((byte)(99)))));
             this.label1.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(170, 27);
+            this.label1.Location = new System.Drawing.Point(271, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 36);
+            this.label1.Size = new System.Drawing.Size(327, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Escolas";
+            this.label1.Text = "Escolas                                            ";
             // 
             // txtIdEscolas
             // 
-            this.txtIdEscolas.Location = new System.Drawing.Point(63, 93);
+            this.txtIdEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtIdEscolas.Location = new System.Drawing.Point(63, 153);
             this.txtIdEscolas.Name = "txtIdEscolas";
             this.txtIdEscolas.Size = new System.Drawing.Size(70, 20);
             this.txtIdEscolas.TabIndex = 1;
             // 
             // txtNomeEscolas
             // 
-            this.txtNomeEscolas.Location = new System.Drawing.Point(176, 93);
+            this.txtNomeEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtNomeEscolas.Location = new System.Drawing.Point(176, 153);
             this.txtNomeEscolas.Name = "txtNomeEscolas";
             this.txtNomeEscolas.Size = new System.Drawing.Size(439, 20);
             this.txtNomeEscolas.TabIndex = 2;
             // 
             // txtEnderecoEscolas
             // 
-            this.txtEnderecoEscolas.Location = new System.Drawing.Point(63, 150);
+            this.txtEnderecoEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtEnderecoEscolas.Location = new System.Drawing.Point(63, 210);
             this.txtEnderecoEscolas.Name = "txtEnderecoEscolas";
             this.txtEnderecoEscolas.Size = new System.Drawing.Size(338, 20);
             this.txtEnderecoEscolas.TabIndex = 3;
             // 
             // txtCepEscolas
             // 
-            this.txtCepEscolas.Location = new System.Drawing.Point(441, 150);
+            this.txtCepEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtCepEscolas.Location = new System.Drawing.Point(441, 210);
             this.txtCepEscolas.Name = "txtCepEscolas";
             this.txtCepEscolas.Size = new System.Drawing.Size(100, 20);
             this.txtCepEscolas.TabIndex = 4;
             // 
             // txtCidadeEscolas
             // 
-            this.txtCidadeEscolas.Location = new System.Drawing.Point(586, 150);
+            this.txtCidadeEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtCidadeEscolas.Location = new System.Drawing.Point(586, 210);
             this.txtCidadeEscolas.Name = "txtCidadeEscolas";
             this.txtCidadeEscolas.Size = new System.Drawing.Size(156, 20);
             this.txtCidadeEscolas.TabIndex = 5;
             // 
             // txtTelefoneEscolas
             // 
-            this.txtTelefoneEscolas.Location = new System.Drawing.Point(63, 221);
+            this.txtTelefoneEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtTelefoneEscolas.Location = new System.Drawing.Point(63, 281);
             this.txtTelefoneEscolas.Name = "txtTelefoneEscolas";
             this.txtTelefoneEscolas.Size = new System.Drawing.Size(187, 20);
             this.txtTelefoneEscolas.TabIndex = 6;
             // 
             // txtDiretoraEscolas
             // 
-            this.txtDiretoraEscolas.Location = new System.Drawing.Point(296, 221);
+            this.txtDiretoraEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtDiretoraEscolas.Location = new System.Drawing.Point(296, 281);
             this.txtDiretoraEscolas.Name = "txtDiretoraEscolas";
             this.txtDiretoraEscolas.Size = new System.Drawing.Size(168, 20);
             this.txtDiretoraEscolas.TabIndex = 7;
             // 
             // txtCoordEscolas
             // 
-            this.txtCoordEscolas.Location = new System.Drawing.Point(541, 221);
+            this.txtCoordEscolas.BackColor = System.Drawing.Color.LightGray;
+            this.txtCoordEscolas.Location = new System.Drawing.Point(541, 281);
             this.txtCoordEscolas.Name = "txtCoordEscolas";
             this.txtCoordEscolas.Size = new System.Drawing.Size(167, 20);
             this.txtCoordEscolas.TabIndex = 8;
             // 
             // btnSairEscolas
             // 
-            this.btnSairEscolas.Location = new System.Drawing.Point(494, 489);
+            this.btnSairEscolas.Location = new System.Drawing.Point(520, 489);
             this.btnSairEscolas.Name = "btnSairEscolas";
             this.btnSairEscolas.Size = new System.Drawing.Size(75, 23);
             this.btnSairEscolas.TabIndex = 9;
@@ -127,7 +140,7 @@
             // 
             // btnExcluirEscolas
             // 
-            this.btnExcluirEscolas.Location = new System.Drawing.Point(586, 489);
+            this.btnExcluirEscolas.Location = new System.Drawing.Point(612, 489);
             this.btnExcluirEscolas.Name = "btnExcluirEscolas";
             this.btnExcluirEscolas.Size = new System.Drawing.Size(75, 23);
             this.btnExcluirEscolas.TabIndex = 10;
@@ -136,7 +149,7 @@
             // 
             // txtAlterarEscolas
             // 
-            this.txtAlterarEscolas.Location = new System.Drawing.Point(680, 489);
+            this.txtAlterarEscolas.Location = new System.Drawing.Point(706, 489);
             this.txtAlterarEscolas.Name = "txtAlterarEscolas";
             this.txtAlterarEscolas.Size = new System.Drawing.Size(75, 23);
             this.txtAlterarEscolas.TabIndex = 11;
@@ -146,7 +159,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 74);
+            this.label2.Location = new System.Drawing.Point(69, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 12;
@@ -155,7 +168,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(184, 74);
+            this.label3.Location = new System.Drawing.Point(184, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 13;
@@ -164,7 +177,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 134);
+            this.label4.Location = new System.Drawing.Point(69, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 14;
@@ -173,7 +186,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(447, 133);
+            this.label5.Location = new System.Drawing.Point(447, 193);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 13);
             this.label5.TabIndex = 15;
@@ -182,7 +195,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(593, 132);
+            this.label6.Location = new System.Drawing.Point(593, 192);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 13);
             this.label6.TabIndex = 16;
@@ -191,7 +204,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(71, 202);
+            this.label7.Location = new System.Drawing.Point(71, 262);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 13);
             this.label7.TabIndex = 17;
@@ -200,7 +213,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(304, 202);
+            this.label8.Location = new System.Drawing.Point(304, 262);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 13);
             this.label8.TabIndex = 18;
@@ -209,17 +222,40 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(550, 202);
+            this.label9.Location = new System.Drawing.Point(550, 262);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(74, 13);
             this.label9.TabIndex = 19;
             this.label9.Text = "Coordenadora";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sistema_inclusiON.Properties.Resources.escola;
+            this.pictureBox1.Location = new System.Drawing.Point(128, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(110, 98);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::sistema_inclusiON.Properties.Resources.INCLUSION_LOGO;
+            this.pictureBox2.Location = new System.Drawing.Point(296, 354);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(192, 170);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmEscolas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(213)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(827, 560);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -242,6 +278,8 @@
             this.Controls.Add(this.label1);
             this.Name = "frmEscolas";
             this.Text = "Escolas";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +307,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
