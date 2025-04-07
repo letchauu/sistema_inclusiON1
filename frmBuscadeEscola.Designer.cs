@@ -61,6 +61,7 @@
             this.btnBuscarEscolas.TabIndex = 2;
             this.btnBuscarEscolas.Text = "Buscar";
             this.btnBuscarEscolas.UseVisualStyleBackColor = true;
+            this.btnBuscarEscolas.Click += new System.EventHandler(this.btnBuscarEscolas_Click);
             // 
             // dgvBuscadeEscolas
             // 

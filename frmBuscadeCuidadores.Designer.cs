@@ -61,6 +61,7 @@
             this.btnBuscarCuidador.TabIndex = 2;
             this.btnBuscarCuidador.Text = "Buscar";
             this.btnBuscarCuidador.UseVisualStyleBackColor = true;
+            this.btnBuscarCuidador.Click += new System.EventHandler(this.btnBuscarCuidador_Click);
             // 
             // btnSairBuscaCuidador
             // 

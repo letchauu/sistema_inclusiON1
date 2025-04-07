@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace sistema_inclusiON
@@ -46,8 +40,30 @@ namespace sistema_inclusiON
             this.Close();
         }
 
-        private void btnLogar_Click(object sender, EventArgs e)
+       
+        private bool AutenticarUsuario(string usuario, string senha)
         {
+            using (SqlConnection conn = new SqlConnection(conexao.IniciarCon))
+            {
+                string query = "SELECT idUsuario FROM usuarios WHERE loginUsuario = @Usuario AND senhaUsuario = @Senha";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Usuario", usuario);
+                    cmd.Parameters.AddWithValue("@Senha", senha);
+
+                    conn.Open();
+                    var result = cmd.ExecuteScalar();
+
+                    // Se retornar um ID, o usuário existe e as credenciais estão corretas
+                    return result != null && result != DBNull.Value;
+                }
+            }
+        }
+
+        private void btnEntrarLogin_Click(object sender, EventArgs e)
+        {
+
             try
             {
                 // Validação dos campos
@@ -58,7 +74,7 @@ namespace sistema_inclusiON
                     return;
                 }
                 // Autenticação
-                if (AutenticarLogin(txtLogin.Text, txtSenha.Text))
+                if (AutenticarUsuario(txtLogin.Text, txtSenha.Text))
                 {
                     // Login bem-sucedido
                     this.Hide();
@@ -78,26 +94,8 @@ namespace sistema_inclusiON
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro inesperado:\n{ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            
-            private bool AutenticarLogin(string usuario, string senha)
-        {
-            using (SqlConnection conn = new SqlConnection(conexao.IniciarCon))
-            {
-                string query = "SELECT idUsuario FROM usuarios WHERE nomeUsuario = @Usuario AND senhaUsuario = @Senha";
-
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Usuario", usuario);
-                    cmd.Parameters.AddWithValue("@Senha", senha);
-
-                    conn.Open();
-                    var result = cmd.ExecuteScalar();
-
-                    // Se retornar um ID, o usuário existe e as credenciais estão corretas
-                    return result != null && result != DBNull.Value;
-                }
             }
         }
     }
-}
-        
+    }
+

@@ -70,5 +70,11 @@ namespace sistema_inclusiON
             frmMenuRelatorios frm = new frmMenuRelatorios();
             frm.ShowDialog();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.ShowDialog();
+        }
     }
 }

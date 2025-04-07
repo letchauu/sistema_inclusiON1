@@ -61,6 +61,7 @@
             this.btnBuscarAluno.TabIndex = 2;
             this.btnBuscarAluno.Text = "Buscar";
             this.btnBuscarAluno.UseVisualStyleBackColor = true;
+            this.btnBuscarAluno.Click += new System.EventHandler(this.btnBuscarAluno_Click);
             // 
             // dgvBuscadeAluno
             // 

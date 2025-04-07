@@ -61,6 +61,7 @@
             this.btnBuscarProfessor.TabIndex = 2;
             this.btnBuscarProfessor.Text = "Buscar";
             this.btnBuscarProfessor.UseVisualStyleBackColor = true;
+            this.btnBuscarProfessor.Click += new System.EventHandler(this.btnBuscarProfessor_Click);
             // 
             // btnSairBuscaProfessor
             // 

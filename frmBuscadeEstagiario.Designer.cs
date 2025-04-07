@@ -61,6 +61,7 @@
             this.btnBuscarEstagiario.TabIndex = 2;
             this.btnBuscarEstagiario.Text = "Buscar";
             this.btnBuscarEstagiario.UseVisualStyleBackColor = true;
+            this.btnBuscarEstagiario.Click += new System.EventHandler(this.btnBuscarEstagiario_Click);
             // 
             // btnSairBuscaEstagiario
             // 

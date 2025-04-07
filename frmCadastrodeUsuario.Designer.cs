@@ -40,32 +40,35 @@
             this.btnSairUsuario = new System.Windows.Forms.Button();
             this.btnExcluirUsuario = new System.Windows.Forms.Button();
             this.btnAlterarUsuario = new System.Windows.Forms.Button();
+            this.btnSalvarUsuario = new System.Windows.Forms.Button();
+            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtIdUsuario
             // 
-            this.txtIdUsuario.Location = new System.Drawing.Point(95, 136);
+            this.txtIdUsuario.Location = new System.Drawing.Point(95, 105);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtIdUsuario.TabIndex = 0;
             // 
             // txtNomeUsuario
             // 
-            this.txtNomeUsuario.Location = new System.Drawing.Point(95, 189);
+            this.txtNomeUsuario.Location = new System.Drawing.Point(95, 158);
             this.txtNomeUsuario.Name = "txtNomeUsuario";
             this.txtNomeUsuario.Size = new System.Drawing.Size(328, 20);
             this.txtNomeUsuario.TabIndex = 1;
             // 
             // txtEmailUsuario
             // 
-            this.txtEmailUsuario.Location = new System.Drawing.Point(95, 243);
+            this.txtEmailUsuario.Location = new System.Drawing.Point(95, 212);
             this.txtEmailUsuario.Name = "txtEmailUsuario";
             this.txtEmailUsuario.Size = new System.Drawing.Size(328, 20);
             this.txtEmailUsuario.TabIndex = 2;
             // 
             // txtSenhaUsuario
             // 
-            this.txtSenhaUsuario.Location = new System.Drawing.Point(95, 294);
+            this.txtSenhaUsuario.Location = new System.Drawing.Point(95, 263);
             this.txtSenhaUsuario.Name = "txtSenhaUsuario";
             this.txtSenhaUsuario.Size = new System.Drawing.Size(328, 20);
             this.txtSenhaUsuario.TabIndex = 3;
@@ -83,7 +86,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 120);
+            this.label2.Location = new System.Drawing.Point(102, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 5;
@@ -92,7 +95,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(105, 167);
+            this.label3.Location = new System.Drawing.Point(105, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 6;
@@ -101,7 +104,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 224);
+            this.label4.Location = new System.Drawing.Point(108, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 7;
@@ -110,7 +113,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(111, 275);
+            this.label5.Location = new System.Drawing.Point(111, 244);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 8;
@@ -124,6 +127,7 @@
             this.btnSairUsuario.TabIndex = 9;
             this.btnSairUsuario.Text = "Sair";
             this.btnSairUsuario.UseVisualStyleBackColor = true;
+            this.btnSairUsuario.Click += new System.EventHandler(this.btnSairUsuario_Click);
             // 
             // btnExcluirUsuario
             // 
@@ -143,11 +147,40 @@
             this.btnAlterarUsuario.Text = "Alterar";
             this.btnAlterarUsuario.UseVisualStyleBackColor = true;
             // 
+            // btnSalvarUsuario
+            // 
+            this.btnSalvarUsuario.Location = new System.Drawing.Point(327, 381);
+            this.btnSalvarUsuario.Name = "btnSalvarUsuario";
+            this.btnSalvarUsuario.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvarUsuario.TabIndex = 12;
+            this.btnSalvarUsuario.Text = "Salvar";
+            this.btnSalvarUsuario.UseVisualStyleBackColor = true;
+            this.btnSalvarUsuario.Click += new System.EventHandler(this.btnSalvarUsuario_Click);
+            // 
+            // txtLogin
+            // 
+            this.txtLogin.Location = new System.Drawing.Point(95, 309);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(328, 20);
+            this.txtLogin.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(114, 290);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Login";
+            // 
             // frmCadastrodeUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(799, 457);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtLogin);
+            this.Controls.Add(this.btnSalvarUsuario);
             this.Controls.Add(this.btnAlterarUsuario);
             this.Controls.Add(this.btnExcluirUsuario);
             this.Controls.Add(this.btnSairUsuario);
@@ -181,5 +214,8 @@
         private System.Windows.Forms.Button btnSairUsuario;
         private System.Windows.Forms.Button btnExcluirUsuario;
         private System.Windows.Forms.Button btnAlterarUsuario;
+        private System.Windows.Forms.Button btnSalvarUsuario;
+        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.Label label6;
     }
 }

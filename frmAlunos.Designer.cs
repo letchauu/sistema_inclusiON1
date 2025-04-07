@@ -66,6 +66,7 @@
             this.btnAlterarAlunos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnSalvarAlunos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -359,7 +360,7 @@
             // 
             // btnSairAlunos
             // 
-            this.btnSairAlunos.Location = new System.Drawing.Point(577, 498);
+            this.btnSairAlunos.Location = new System.Drawing.Point(632, 498);
             this.btnSairAlunos.Name = "btnSairAlunos";
             this.btnSairAlunos.Size = new System.Drawing.Size(75, 23);
             this.btnSairAlunos.TabIndex = 33;
@@ -368,7 +369,7 @@
             // 
             // btnExcluirAlunos
             // 
-            this.btnExcluirAlunos.Location = new System.Drawing.Point(658, 498);
+            this.btnExcluirAlunos.Location = new System.Drawing.Point(713, 498);
             this.btnExcluirAlunos.Name = "btnExcluirAlunos";
             this.btnExcluirAlunos.Size = new System.Drawing.Size(75, 23);
             this.btnExcluirAlunos.TabIndex = 34;
@@ -377,7 +378,7 @@
             // 
             // btnAlterarAlunos
             // 
-            this.btnAlterarAlunos.Location = new System.Drawing.Point(739, 498);
+            this.btnAlterarAlunos.Location = new System.Drawing.Point(794, 498);
             this.btnAlterarAlunos.Name = "btnAlterarAlunos";
             this.btnAlterarAlunos.Size = new System.Drawing.Size(75, 23);
             this.btnAlterarAlunos.TabIndex = 35;
@@ -404,12 +405,23 @@
             this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
             // 
+            // btnSalvarAlunos
+            // 
+            this.btnSalvarAlunos.Location = new System.Drawing.Point(548, 498);
+            this.btnSalvarAlunos.Name = "btnSalvarAlunos";
+            this.btnSalvarAlunos.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvarAlunos.TabIndex = 38;
+            this.btnSalvarAlunos.Text = "Salvar";
+            this.btnSalvarAlunos.UseVisualStyleBackColor = true;
+            this.btnSalvarAlunos.Click += new System.EventHandler(this.btnSalvarAlunos_Click);
+            // 
             // frmAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(213)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(895, 563);
+            this.Controls.Add(this.btnSalvarAlunos);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAlterarAlunos);
@@ -497,5 +509,6 @@
         private System.Windows.Forms.Button btnAlterarAlunos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnSalvarAlunos;
     }
 }
