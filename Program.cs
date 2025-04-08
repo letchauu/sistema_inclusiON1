@@ -16,7 +16,7 @@ namespace sistema_inclusiON
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAlunos());
+            Application.Run(new Form1());
         }
     }
 }

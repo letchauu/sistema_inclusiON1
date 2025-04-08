@@ -79,6 +79,7 @@
             this.btnSairBuscaEscolas.TabIndex = 4;
             this.btnSairBuscaEscolas.Text = "Sair";
             this.btnSairBuscaEscolas.UseVisualStyleBackColor = true;
+            this.btnSairBuscaEscolas.Click += new System.EventHandler(this.btnSairBuscaEscolas_Click);
             // 
             // frmBuscadeEscola
             // 

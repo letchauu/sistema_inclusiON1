@@ -27,7 +27,7 @@ namespace sistema_inclusiON
                     {
                         cn.Open();
 
-                        var sqlQuery = "select * from alunos";
+                        var sqlQuery = "select * from estagiarios";
                         using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
                         {
                             using (DataTable dt = new DataTable())
@@ -47,6 +47,12 @@ namespace sistema_inclusiON
 
                 }
             }
+        }
+
+        private void btnSairBuscaEstagiario_Click(object sender, EventArgs e)
+        {
+            frmMenudeBusca frm = new frmMenudeBusca();
+            frm.ShowDialog();
         }
     }
     }

@@ -50,6 +50,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnSalvarEscola = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -131,7 +132,7 @@
             // 
             // btnSairEscolas
             // 
-            this.btnSairEscolas.Location = new System.Drawing.Point(520, 489);
+            this.btnSairEscolas.Location = new System.Drawing.Point(545, 489);
             this.btnSairEscolas.Name = "btnSairEscolas";
             this.btnSairEscolas.Size = new System.Drawing.Size(75, 23);
             this.btnSairEscolas.TabIndex = 9;
@@ -140,7 +141,7 @@
             // 
             // btnExcluirEscolas
             // 
-            this.btnExcluirEscolas.Location = new System.Drawing.Point(612, 489);
+            this.btnExcluirEscolas.Location = new System.Drawing.Point(637, 489);
             this.btnExcluirEscolas.Name = "btnExcluirEscolas";
             this.btnExcluirEscolas.Size = new System.Drawing.Size(75, 23);
             this.btnExcluirEscolas.TabIndex = 10;
@@ -149,7 +150,7 @@
             // 
             // txtAlterarEscolas
             // 
-            this.txtAlterarEscolas.Location = new System.Drawing.Point(706, 489);
+            this.txtAlterarEscolas.Location = new System.Drawing.Point(731, 489);
             this.txtAlterarEscolas.Name = "txtAlterarEscolas";
             this.txtAlterarEscolas.Size = new System.Drawing.Size(75, 23);
             this.txtAlterarEscolas.TabIndex = 11;
@@ -241,12 +242,22 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::sistema_inclusiON.Properties.Resources.INCLUSION_LOGO;
-            this.pictureBox2.Location = new System.Drawing.Point(296, 354);
+            this.pictureBox2.Location = new System.Drawing.Point(187, 355);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(192, 170);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
+            // 
+            // btnSalvarEscola
+            // 
+            this.btnSalvarEscola.Location = new System.Drawing.Point(450, 489);
+            this.btnSalvarEscola.Name = "btnSalvarEscola";
+            this.btnSalvarEscola.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvarEscola.TabIndex = 22;
+            this.btnSalvarEscola.Text = "Salvar";
+            this.btnSalvarEscola.UseVisualStyleBackColor = true;
+            this.btnSalvarEscola.Click += new System.EventHandler(this.btnSalvarEscola_Click);
             // 
             // frmEscolas
             // 
@@ -254,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(213)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(827, 560);
+            this.Controls.Add(this.btnSalvarEscola);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
@@ -309,5 +321,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnSalvarEscola;
     }
 }

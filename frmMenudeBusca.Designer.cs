@@ -45,6 +45,7 @@
             this.btnBuscarAlunos.TabIndex = 0;
             this.btnBuscarAlunos.Text = "Buscar Alunos";
             this.btnBuscarAlunos.UseVisualStyleBackColor = true;
+            this.btnBuscarAlunos.Click += new System.EventHandler(this.btnBuscarAlunos_Click);
             // 
             // btnBuscarEscolas
             // 
@@ -54,6 +55,7 @@
             this.btnBuscarEscolas.TabIndex = 1;
             this.btnBuscarEscolas.Text = "Buscar Escolas";
             this.btnBuscarEscolas.UseVisualStyleBackColor = true;
+            this.btnBuscarEscolas.Click += new System.EventHandler(this.btnBuscarEscolas_Click);
             // 
             // btnBuscasEstagiarios
             // 
@@ -63,6 +65,7 @@
             this.btnBuscasEstagiarios.TabIndex = 2;
             this.btnBuscasEstagiarios.Text = "Buscar Estagiários";
             this.btnBuscasEstagiarios.UseVisualStyleBackColor = true;
+            this.btnBuscasEstagiarios.Click += new System.EventHandler(this.btnBuscasEstagiarios_Click);
             // 
             // btnBuscarProfessores
             // 
@@ -72,6 +75,7 @@
             this.btnBuscarProfessores.TabIndex = 3;
             this.btnBuscarProfessores.Text = "Buscar Professores";
             this.btnBuscarProfessores.UseVisualStyleBackColor = true;
+            this.btnBuscarProfessores.Click += new System.EventHandler(this.btnBuscarProfessores_Click);
             // 
             // btnBuscarCuidadores
             // 
@@ -81,6 +85,7 @@
             this.btnBuscarCuidadores.TabIndex = 4;
             this.btnBuscarCuidadores.Text = "Buscar Cuidadores";
             this.btnBuscarCuidadores.UseVisualStyleBackColor = true;
+            this.btnBuscarCuidadores.Click += new System.EventHandler(this.btnBuscarCuidadores_Click);
             // 
             // btnSairBusca
             // 
@@ -90,6 +95,7 @@
             this.btnSairBusca.TabIndex = 5;
             this.btnSairBusca.Text = "Sair";
             this.btnSairBusca.UseVisualStyleBackColor = true;
+            this.btnSairBusca.Click += new System.EventHandler(this.btnSairBusca_Click);
             // 
             // label1
             // 

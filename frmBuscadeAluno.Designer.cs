@@ -79,6 +79,7 @@
             this.btnSairBuscaAluno.TabIndex = 4;
             this.btnSairBuscaAluno.Text = "Sair";
             this.btnSairBuscaAluno.UseVisualStyleBackColor = true;
+            this.btnSairBuscaAluno.Click += new System.EventHandler(this.btnSairBuscaAluno_Click);
             // 
             // frmBuscadeAluno
             // 

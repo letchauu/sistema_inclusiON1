@@ -71,6 +71,7 @@
             this.btnSairBuscaEstagiario.TabIndex = 3;
             this.btnSairBuscaEstagiario.Text = "Sair";
             this.btnSairBuscaEstagiario.UseVisualStyleBackColor = true;
+            this.btnSairBuscaEstagiario.Click += new System.EventHandler(this.btnSairBuscaEstagiario_Click);
             // 
             // dgvBuscadeEstagiarios
             // 

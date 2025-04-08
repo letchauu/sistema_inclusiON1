@@ -52,6 +52,7 @@
             this.cmbUsuario = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnSalvarCadastro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -275,12 +276,22 @@
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
             // 
+            // btnSalvarCadastro
+            // 
+            this.btnSalvarCadastro.Location = new System.Drawing.Point(364, 456);
+            this.btnSalvarCadastro.Name = "btnSalvarCadastro";
+            this.btnSalvarCadastro.Size = new System.Drawing.Size(92, 31);
+            this.btnSalvarCadastro.TabIndex = 30;
+            this.btnSalvarCadastro.Text = "Salvar";
+            this.btnSalvarCadastro.UseVisualStyleBackColor = true;
+            // 
             // frmCadastrodeAlunoLaudado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(213)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(834, 510);
+            this.Controls.Add(this.btnSalvarCadastro);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbUsuario);
@@ -340,5 +351,6 @@
         private System.Windows.Forms.ComboBox cmbUsuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnSalvarCadastro;
     }
 }

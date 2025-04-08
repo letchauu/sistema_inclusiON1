@@ -50,6 +50,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnSairCuidadores = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -127,12 +128,13 @@
             // 
             // btnSalvarCuidador
             // 
-            this.btnSalvarCuidador.Location = new System.Drawing.Point(492, 482);
+            this.btnSalvarCuidador.Location = new System.Drawing.Point(403, 482);
             this.btnSalvarCuidador.Name = "btnSalvarCuidador";
             this.btnSalvarCuidador.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarCuidador.TabIndex = 10;
             this.btnSalvarCuidador.Text = "Salvar";
             this.btnSalvarCuidador.UseVisualStyleBackColor = true;
+            this.btnSalvarCuidador.Click += new System.EventHandler(this.btnSalvarCuidador_Click);
             // 
             // btnExcluirCuidador
             // 
@@ -233,11 +235,21 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Corem";
             // 
+            // btnSairCuidadores
+            // 
+            this.btnSairCuidadores.Location = new System.Drawing.Point(501, 482);
+            this.btnSairCuidadores.Name = "btnSairCuidadores";
+            this.btnSairCuidadores.Size = new System.Drawing.Size(75, 23);
+            this.btnSairCuidadores.TabIndex = 23;
+            this.btnSairCuidadores.Text = "Sair";
+            this.btnSairCuidadores.UseVisualStyleBackColor = true;
+            // 
             // frmCuidadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 549);
+            this.Controls.Add(this.btnSairCuidadores);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -291,5 +303,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnSairCuidadores;
     }
 }

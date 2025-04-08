@@ -48,5 +48,11 @@ namespace sistema_inclusiON
                 }
             }
         }
+
+        private void btnSairBuscaAluno_Click(object sender, EventArgs e)
+        {
+            frmBuscadeAluno frm = new frmBuscadeAluno();
+            frm.ShowDialog();
+        }
     }
 }

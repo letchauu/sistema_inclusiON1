@@ -71,6 +71,7 @@
             this.btnSairBuscaProfessor.TabIndex = 3;
             this.btnSairBuscaProfessor.Text = "Sair";
             this.btnSairBuscaProfessor.UseVisualStyleBackColor = true;
+            this.btnSairBuscaProfessor.Click += new System.EventHandler(this.btnSairBuscaProfessor_Click);
             // 
             // dgvBuscadeProfessor
             // 

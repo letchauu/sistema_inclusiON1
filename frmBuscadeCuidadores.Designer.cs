@@ -71,6 +71,7 @@
             this.btnSairBuscaCuidador.TabIndex = 3;
             this.btnSairBuscaCuidador.Text = "Sair";
             this.btnSairBuscaCuidador.UseVisualStyleBackColor = true;
+            this.btnSairBuscaCuidador.Click += new System.EventHandler(this.btnSairBuscaCuidador_Click);
             // 
             // dgvBuscarCuidador
             // 
