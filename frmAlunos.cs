@@ -13,7 +13,7 @@ namespace sistema_inclusiON
 {
     public partial class frmAlunos: Form
     {
-        public frmAlunos()
+        public frmAlunos(int idAluno)
         {
             InitializeComponent();
         }

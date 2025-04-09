@@ -284,6 +284,7 @@
             this.btnSalvarCadastro.TabIndex = 30;
             this.btnSalvarCadastro.Text = "Salvar";
             this.btnSalvarCadastro.UseVisualStyleBackColor = true;
+            this.btnSalvarCadastro.Click += new System.EventHandler(this.btnSalvarCadastro_Click);
             // 
             // frmCadastrodeAlunoLaudado
             // 
