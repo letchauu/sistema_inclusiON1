@@ -19,8 +19,8 @@ namespace sistema_inclusiON
 
         private void btnAlunos_Click(object sender, EventArgs e)
         {
-           // frmAlunos frm = new frmAlunos();
-            //frm.ShowDialog();
+            frmAlunos frm = new frmAlunos();
+            frm.ShowDialog();
         }
 
         private void btnEscolas_Click(object sender, EventArgs e)
