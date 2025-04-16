@@ -13,9 +13,50 @@ namespace sistema_inclusiON
 {
     public partial class frmCadastroProfessor: Form
     {
-        public frmCadastroProfessor()
+        int idProfessor = 0;
+        public frmCadastroProfessor(int idProfessor)
         {
             InitializeComponent();
+            this.idProfessor = idProfessor;
+
+            if (this.idProfessor > 0) ;
+            GetProfessor(idProfessor);
+        }
+        private void GetProfessor(int idProfessor)
+        {
+            try
+            {
+
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                {
+                    cn.Open();
+                    var sql = "select * from professores where idProfessor=" + idProfessor;
+                    using (SqlCommand cmd = new SqlCommand(sql, cn))
+                    {
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                            if (dr.HasRows)
+                            {
+                                if (dr.Read())
+                                {
+                                    txtNomeProfessor.Text = dr["nomeProfessor"].ToString();
+                                    txtNomeSocial.Text = dr["nomeSocialProfessor"].ToString();
+                                    txtEnderecoProfessor.Text = dr["enderecoProfessor"].ToString();
+                                    txtCepProfessor.Text = dr["cepProfessor"].ToString();
+                                    txtCidadeProfessor.Text = dr["cidadeProfessor"].ToString();
+                                    txtTelefoneProfessor.Text = dr["telefoneProfessor"].ToString();
+                                    txtCertificadoProfessor.Text = dr["certificadoProfessor"].ToString();
+
+                                }
+                            }
+                    }
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dados não atualizados.\n\n" + ex.Message);
+            }
         }
 
         private void btnSalvarProfessor_Click(object sender, EventArgs e)
@@ -53,6 +94,18 @@ namespace sistema_inclusiON
             {
                 MessageBox.Show("Dados não salvos.\n\n" + ex.Message); //Exibe uma mensagem de erro ao usuário, incluindo a mensagem de exceção (ex.Message)
             }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            frmBuscadeProfessores frm = new frmBuscadeProfessores();
+            frm.ShowDialog();
+        }
+
+        private void btnSairProfessor_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal frm = new frmMenuPrincipal();
+            frm.ShowDialog();
         }
     }
 }

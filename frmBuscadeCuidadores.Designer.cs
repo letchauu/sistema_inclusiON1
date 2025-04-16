@@ -31,8 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarCuidador = new System.Windows.Forms.TextBox();
             this.btnBuscarCuidador = new System.Windows.Forms.Button();
-            this.btnSairBuscaCuidador = new System.Windows.Forms.Button();
             this.dgvBuscarCuidador = new System.Windows.Forms.DataGridView();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscarCuidador)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,16 +64,6 @@
             this.btnBuscarCuidador.UseVisualStyleBackColor = true;
             this.btnBuscarCuidador.Click += new System.EventHandler(this.btnBuscarCuidador_Click);
             // 
-            // btnSairBuscaCuidador
-            // 
-            this.btnSairBuscaCuidador.Location = new System.Drawing.Point(701, 472);
-            this.btnSairBuscaCuidador.Name = "btnSairBuscaCuidador";
-            this.btnSairBuscaCuidador.Size = new System.Drawing.Size(75, 23);
-            this.btnSairBuscaCuidador.TabIndex = 3;
-            this.btnSairBuscaCuidador.Text = "Sair";
-            this.btnSairBuscaCuidador.UseVisualStyleBackColor = true;
-            this.btnSairBuscaCuidador.Click += new System.EventHandler(this.btnSairBuscaCuidador_Click);
-            // 
             // dgvBuscarCuidador
             // 
             this.dgvBuscarCuidador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -81,13 +72,34 @@
             this.dgvBuscarCuidador.Size = new System.Drawing.Size(813, 264);
             this.dgvBuscarCuidador.TabIndex = 4;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(596, 97);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 5;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(697, 97);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 6;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // frmBuscadeCuidadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 516);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.dgvBuscarCuidador);
-            this.Controls.Add(this.btnSairBuscaCuidador);
             this.Controls.Add(this.btnBuscarCuidador);
             this.Controls.Add(this.txtBuscarCuidador);
             this.Controls.Add(this.label1);
@@ -104,7 +116,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscarCuidador;
         private System.Windows.Forms.Button btnBuscarCuidador;
-        private System.Windows.Forms.Button btnSairBuscaCuidador;
         private System.Windows.Forms.DataGridView dgvBuscarCuidador;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

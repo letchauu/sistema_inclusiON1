@@ -14,6 +14,16 @@ namespace sistema_inclusiON
 {
     public partial class frmCadastrodeAlunoLaudado: Form
     {
+        public class ComboboxItem
+        {
+            public string Text { get; set; }
+            public object Value { get; set; }
+
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
         public frmCadastrodeAlunoLaudado()
         {
             InitializeComponent();
@@ -49,14 +59,14 @@ namespace sistema_inclusiON
             using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
             {
                 cn.Open();
-                SqlCommand cmd = new SqlCommand("select idEscola, nomeEscola from escolas", cn);
+                SqlCommand cmd = new SqlCommand("select idEscolas, nomeEscola from escolas", cn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     cmbNomeEscola.Items.Add(new ComboboxItem
                     {
                         Text = reader["nomeEscola"].ToString(),
-                        Value = reader["idEscola"]
+                        Value = reader["idEscolas"]
                     });
                 }
             }
@@ -139,19 +149,15 @@ namespace sistema_inclusiON
         private void btnSalvarCadastro_Click(object sender, EventArgs e)
         
         {
-            if (cmbNomeAluno.SelectedItem == null || cmbNomeEscola.SelectedItem == null)
-            {
-                MessageBox.Show("Selecione um aluno e uma escola.");
-                return;
-            }
             int idAluno = (int)(cmbNomeAluno.SelectedItem as ComboboxItem).Value;
             string nomeSocialAluno = txtNomeSocial.ToString();
             int idEscola = (int)(cmbNomeEscola.SelectedItem as ComboboxItem).Value;
             int idProfessor = (int)(cmbNomeProfessor.SelectedItem as ComboboxItem).Value;
             int idCuidador = (int)(cmbNomeCuidador.SelectedItem as ComboboxItem).Value;
             int idEstagiario = (int)(cmbNomeEstagiario.SelectedItem as ComboboxItem).Value;
-            int idUsuario = (int)(cmbUsuario.SelectedItem as ComboboxItem).Value;
             string desenAluno = txtDesenAluno.ToString();
+            int idUsuario = (int)(cmbUsuario.SelectedItem as ComboboxItem).Value;
+            
 
             using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
             {
@@ -170,9 +176,9 @@ namespace sistema_inclusiON
             MessageBox.Show("Matrícula realizada com sucesso!");
         }
 
-        private void cmbNomeAluno_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        
+        
 
         }
     }
-}
+

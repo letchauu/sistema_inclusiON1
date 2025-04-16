@@ -46,9 +46,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnSairProfessor = new System.Windows.Forms.Button();
-            this.btnExcluirProfessor = new System.Windows.Forms.Button();
-            this.btnAlterarProfessor = new System.Windows.Forms.Button();
             this.btnSalvarProfessor = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -191,34 +190,17 @@
             // 
             // btnSairProfessor
             // 
-            this.btnSairProfessor.Location = new System.Drawing.Point(491, 414);
+            this.btnSairProfessor.Location = new System.Drawing.Point(695, 424);
             this.btnSairProfessor.Name = "btnSairProfessor";
             this.btnSairProfessor.Size = new System.Drawing.Size(75, 23);
             this.btnSairProfessor.TabIndex = 17;
             this.btnSairProfessor.Text = "Sair";
             this.btnSairProfessor.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluirProfessor
-            // 
-            this.btnExcluirProfessor.Location = new System.Drawing.Point(611, 414);
-            this.btnExcluirProfessor.Name = "btnExcluirProfessor";
-            this.btnExcluirProfessor.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluirProfessor.TabIndex = 18;
-            this.btnExcluirProfessor.Text = "Excluir";
-            this.btnExcluirProfessor.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterarProfessor
-            // 
-            this.btnAlterarProfessor.Location = new System.Drawing.Point(725, 414);
-            this.btnAlterarProfessor.Name = "btnAlterarProfessor";
-            this.btnAlterarProfessor.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterarProfessor.TabIndex = 19;
-            this.btnAlterarProfessor.Text = "Alterar";
-            this.btnAlterarProfessor.UseVisualStyleBackColor = true;
+            this.btnSairProfessor.Click += new System.EventHandler(this.btnSairProfessor_Click);
             // 
             // btnSalvarProfessor
             // 
-            this.btnSalvarProfessor.Location = new System.Drawing.Point(390, 414);
+            this.btnSalvarProfessor.Location = new System.Drawing.Point(491, 424);
             this.btnSalvarProfessor.Name = "btnSalvarProfessor";
             this.btnSalvarProfessor.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarProfessor.TabIndex = 20;
@@ -226,14 +208,23 @@
             this.btnSalvarProfessor.UseVisualStyleBackColor = true;
             this.btnSalvarProfessor.Click += new System.EventHandler(this.btnSalvarProfessor_Click);
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(591, 424);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 21;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // frmCadastroProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(826, 486);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnSalvarProfessor);
-            this.Controls.Add(this.btnAlterarProfessor);
-            this.Controls.Add(this.btnExcluirProfessor);
             this.Controls.Add(this.btnSairProfessor);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -279,8 +270,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSairProfessor;
-        private System.Windows.Forms.Button btnExcluirProfessor;
-        private System.Windows.Forms.Button btnAlterarProfessor;
         private System.Windows.Forms.Button btnSalvarProfessor;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

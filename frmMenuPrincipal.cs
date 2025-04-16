@@ -19,49 +19,43 @@ namespace sistema_inclusiON
 
         private void btnAlunos_Click(object sender, EventArgs e)
         {
-            frmAlunos frm = new frmAlunos();
-            frm.ShowDialog();
+            /*frmCadAluno frm = new frmCadAluno();
+            frm.ShowDialog();*/
         }
 
         private void btnEscolas_Click(object sender, EventArgs e)
         {
-            frmEscolas frm = new frmEscolas();
+            frmEscola2 frm = new frmEscola2(0);
             frm.ShowDialog();
         }
 
         private void btnCuidadores_Click(object sender, EventArgs e)
         {
-            frmCuidadores frm = new frmCuidadores();
+            frmCuidadores frm = new frmCuidadores(0);
             frm.ShowDialog();
         }
 
         private void btnEstagiarios_Click(object sender, EventArgs e)
         {
-            frmEstagiarios frm = new frmEstagiarios();
+            frmEstagiarios frm = new frmEstagiarios(0);
             frm.ShowDialog();
         }
 
         private void btnProfessores_Click(object sender, EventArgs e)
         {
-            frmCadastroProfessor frm = new frmCadastroProfessor();
+            frmCadastroProfessor frm = new frmCadastroProfessor(0);
             frm.ShowDialog();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            frmCadastrodeUsuario frm = new frmCadastrodeUsuario();
+            frmCadastrodeUsuario frm = new frmCadastrodeUsuario(0);
             frm.ShowDialog();
         }
 
         private void btnCadAlunos_Click(object sender, EventArgs e)
         {
             frmCadastrodeAlunoLaudado frm = new frmCadastrodeAlunoLaudado();
-            frm.ShowDialog();
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            frmMenudeBusca frm = new frmMenudeBusca();
             frm.ShowDialog();
         }
 
@@ -76,5 +70,12 @@ namespace sistema_inclusiON
             Form1 frm = new Form1();
             frm.ShowDialog();
         }
+
+        private void btnAluno1_Click(object sender, EventArgs e)
+        {
+            /*frmCadAluno frm = new frmCadAluno();
+            frm.ShowDialog();*/
+        }
     }
-}
+ }
+

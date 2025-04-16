@@ -39,8 +39,6 @@
             this.txtTelefoneCuidador = new System.Windows.Forms.TextBox();
             this.txtCorem = new System.Windows.Forms.TextBox();
             this.btnSalvarCuidador = new System.Windows.Forms.Button();
-            this.btnExcluirCuidador = new System.Windows.Forms.Button();
-            this.txtAlterarCuidador = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,6 +49,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnSairCuidadores = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -128,31 +127,13 @@
             // 
             // btnSalvarCuidador
             // 
-            this.btnSalvarCuidador.Location = new System.Drawing.Point(403, 482);
+            this.btnSalvarCuidador.Location = new System.Drawing.Point(567, 482);
             this.btnSalvarCuidador.Name = "btnSalvarCuidador";
             this.btnSalvarCuidador.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarCuidador.TabIndex = 10;
             this.btnSalvarCuidador.Text = "Salvar";
             this.btnSalvarCuidador.UseVisualStyleBackColor = true;
             this.btnSalvarCuidador.Click += new System.EventHandler(this.btnSalvarCuidador_Click);
-            // 
-            // btnExcluirCuidador
-            // 
-            this.btnExcluirCuidador.Location = new System.Drawing.Point(596, 482);
-            this.btnExcluirCuidador.Name = "btnExcluirCuidador";
-            this.btnExcluirCuidador.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluirCuidador.TabIndex = 11;
-            this.btnExcluirCuidador.Text = "Excluir";
-            this.btnExcluirCuidador.UseVisualStyleBackColor = true;
-            // 
-            // txtAlterarCuidador
-            // 
-            this.txtAlterarCuidador.Location = new System.Drawing.Point(704, 482);
-            this.txtAlterarCuidador.Name = "txtAlterarCuidador";
-            this.txtAlterarCuidador.Size = new System.Drawing.Size(75, 23);
-            this.txtAlterarCuidador.TabIndex = 12;
-            this.txtAlterarCuidador.Text = "Alterar";
-            this.txtAlterarCuidador.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -237,18 +218,30 @@
             // 
             // btnSairCuidadores
             // 
-            this.btnSairCuidadores.Location = new System.Drawing.Point(501, 482);
+            this.btnSairCuidadores.Location = new System.Drawing.Point(748, 482);
             this.btnSairCuidadores.Name = "btnSairCuidadores";
             this.btnSairCuidadores.Size = new System.Drawing.Size(75, 23);
             this.btnSairCuidadores.TabIndex = 23;
             this.btnSairCuidadores.Text = "Sair";
             this.btnSairCuidadores.UseVisualStyleBackColor = true;
+            this.btnSairCuidadores.Click += new System.EventHandler(this.btnSairCuidadores_Click);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(658, 482);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 24;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // frmCuidadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 549);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnSairCuidadores);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -259,8 +252,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtAlterarCuidador);
-            this.Controls.Add(this.btnExcluirCuidador);
             this.Controls.Add(this.btnSalvarCuidador);
             this.Controls.Add(this.txtCorem);
             this.Controls.Add(this.txtTelefoneCuidador);
@@ -292,8 +283,6 @@
         private System.Windows.Forms.TextBox txtTelefoneCuidador;
         private System.Windows.Forms.TextBox txtCorem;
         private System.Windows.Forms.Button btnSalvarCuidador;
-        private System.Windows.Forms.Button btnExcluirCuidador;
-        private System.Windows.Forms.Button txtAlterarCuidador;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -304,5 +293,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnSairCuidadores;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

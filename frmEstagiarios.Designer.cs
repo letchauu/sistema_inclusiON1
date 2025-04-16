@@ -40,8 +40,6 @@
             this.txtNomeFaculdade = new System.Windows.Forms.TextBox();
             this.txtPeriodoFaculdade = new System.Windows.Forms.TextBox();
             this.btnSairEstagiarios = new System.Windows.Forms.Button();
-            this.btnExcluirEstagiarios = new System.Windows.Forms.Button();
-            this.btnAlterarEstagiarios = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +51,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnSalvarEstagiario = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -137,30 +136,13 @@
             // 
             // btnSairEstagiarios
             // 
-            this.btnSairEstagiarios.Location = new System.Drawing.Point(554, 484);
+            this.btnSairEstagiarios.Location = new System.Drawing.Point(793, 493);
             this.btnSairEstagiarios.Name = "btnSairEstagiarios";
             this.btnSairEstagiarios.Size = new System.Drawing.Size(75, 23);
             this.btnSairEstagiarios.TabIndex = 11;
             this.btnSairEstagiarios.Text = "Sair";
             this.btnSairEstagiarios.UseVisualStyleBackColor = true;
-            // 
-            // btnExcluirEstagiarios
-            // 
-            this.btnExcluirEstagiarios.Location = new System.Drawing.Point(660, 484);
-            this.btnExcluirEstagiarios.Name = "btnExcluirEstagiarios";
-            this.btnExcluirEstagiarios.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluirEstagiarios.TabIndex = 12;
-            this.btnExcluirEstagiarios.Text = "Excluir";
-            this.btnExcluirEstagiarios.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterarEstagiarios
-            // 
-            this.btnAlterarEstagiarios.Location = new System.Drawing.Point(768, 484);
-            this.btnAlterarEstagiarios.Name = "btnAlterarEstagiarios";
-            this.btnAlterarEstagiarios.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterarEstagiarios.TabIndex = 13;
-            this.btnAlterarEstagiarios.Text = "Alterar";
-            this.btnAlterarEstagiarios.UseVisualStyleBackColor = true;
+            this.btnSairEstagiarios.Click += new System.EventHandler(this.btnSairEstagiarios_Click);
             // 
             // label2
             // 
@@ -254,7 +236,7 @@
             // 
             // btnSalvarEstagiario
             // 
-            this.btnSalvarEstagiario.Location = new System.Drawing.Point(457, 484);
+            this.btnSalvarEstagiario.Location = new System.Drawing.Point(613, 493);
             this.btnSalvarEstagiario.Name = "btnSalvarEstagiario";
             this.btnSalvarEstagiario.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarEstagiario.TabIndex = 24;
@@ -262,11 +244,22 @@
             this.btnSalvarEstagiario.UseVisualStyleBackColor = true;
             this.btnSalvarEstagiario.Click += new System.EventHandler(this.btnSalvarEstagiario_Click);
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(708, 493);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 25;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // frmEstagiarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(890, 554);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnSalvarEstagiario);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -278,8 +271,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnAlterarEstagiarios);
-            this.Controls.Add(this.btnExcluirEstagiarios);
             this.Controls.Add(this.btnSairEstagiarios);
             this.Controls.Add(this.txtPeriodoFaculdade);
             this.Controls.Add(this.txtNomeFaculdade);
@@ -313,8 +304,6 @@
         private System.Windows.Forms.TextBox txtNomeFaculdade;
         private System.Windows.Forms.TextBox txtPeriodoFaculdade;
         private System.Windows.Forms.Button btnSairEstagiarios;
-        private System.Windows.Forms.Button btnExcluirEstagiarios;
-        private System.Windows.Forms.Button btnAlterarEstagiarios;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -326,5 +315,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnSalvarEstagiario;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

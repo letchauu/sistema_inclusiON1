@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace sistema_inclusiON
 {
-    public partial class frmBuscadeEstagiario: Form
+    public partial class frmBuscadeUsuario: Form
     {
-        public frmBuscadeEstagiario()
+        public frmBuscadeUsuario()
         {
             InitializeComponent();
         }
 
-        private void btnBuscarEstagiario_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
             {
                 try
@@ -27,14 +27,14 @@ namespace sistema_inclusiON
                     {
                         cn.Open();
 
-                        var sqlQuery = "select * from estagiarios";
+                        var sqlQuery = "select * from usuarios";
                         using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
                         {
                             using (DataTable dt = new DataTable())
 
                             {
                                 da.Fill(dt);
-                                dgvBuscadeEstagiarios.DataSource = dt;
+                                dgvBuscadeUsuarios.DataSource = dt;
                             }
 
                         }
@@ -49,20 +49,15 @@ namespace sistema_inclusiON
             }
         }
 
-        private void btnSairBuscaEstagiario_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if (dgvBuscadeEstagiarios.SelectedRows.Count > 0)
+            if (dgvBuscadeUsuarios.SelectedRows.Count > 0)
             {
 
-                int idEstagiario = Convert.ToInt32(dgvBuscadeEstagiarios.SelectedRows[0].Cells["idEstagiario"].Value);
+                int idUsuario = Convert.ToInt32(dgvBuscadeUsuarios.SelectedRows[0].Cells["idUsuario"].Value);
 
 
-                frmEstagiarios frm = new frmEstagiarios(idEstagiario);
+                frmCadastrodeUsuario frm = new frmCadastrodeUsuario(idUsuario);
                 frm.ShowDialog();
 
 
@@ -70,18 +65,18 @@ namespace sistema_inclusiON
             }
             else
             {
-                MessageBox.Show("Selecione um estagiário(a) para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Selecione um usuário para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if (dgvBuscadeEstagiarios.SelectedRows.Count > 0)
+            if (dgvBuscadeUsuarios.SelectedRows.Count > 0)
             {
                 
-                int idEstagiario = Convert.ToInt32(dgvBuscadeEstagiarios.SelectedRows[0].Cells["idEstagiario"].Value);
+                int idUsuario = Convert.ToInt32(dgvBuscadeUsuarios.SelectedRows[0].Cells["idUsuario"].Value);
 
-                var confirm = MessageBox.Show("Tem certeza que deseja excluir esse estagiário(a)?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                var confirm = MessageBox.Show("Tem certeza que deseja excluir esse usuário?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (confirm == DialogResult.Yes)
                 {
@@ -90,19 +85,19 @@ namespace sistema_inclusiON
                         using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
                         {
                             cn.Open();
-                            string sql = "DELETE FROM estagiarios WHERE idEstagiario = @id";
+                            string sql = "DELETE FROM usuarios WHERE idUsuario = @id";
                             using (SqlCommand cmd = new SqlCommand(sql, cn))
                             {
-                                cmd.Parameters.AddWithValue("@id", idEstagiario);
+                                cmd.Parameters.AddWithValue("@id", idUsuario);
                                 cmd.ExecuteNonQuery();
-                                MessageBox.Show("Estagiário(a) excluído(a) com sucesso!");
+                                MessageBox.Show("Usuário excluído com sucesso!");
                                 BuscarNovamente(); //regarrega a tabela após exclusão
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Erro ao excluir estagiário(a).\n\n" + ex.Message);
+                        MessageBox.Show("Erro ao excluir usuário.\n\n" + ex.Message);
                     }
                 }
             }
@@ -114,13 +109,13 @@ namespace sistema_inclusiON
                 using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
                 {
                     cn.Open();
-                    var sqlQuery = "select * from estagiarios where nomeEstagiario like '%" + txtBuscarEstagiario.Text + "%'";
+                    var sqlQuery = "select * from usuarios where nomeUsuario like '%" + txtBuscarUsuarios.Text + "%'";
                     using (SqlDataAdapter da = new SqlDataAdapter(sqlQuery, cn))
                     {
                         using (DataTable dt = new DataTable())
                         {
                             da.Fill(dt);
-                            dgvBuscadeEstagiarios.DataSource = dt;
+                            dgvBuscadeUsuarios.DataSource = dt;
                         }
                     }
                 }
@@ -132,7 +127,9 @@ namespace sistema_inclusiON
         }
     }
 }
-       
+
+        
+    
     
     
 

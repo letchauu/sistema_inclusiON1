@@ -32,7 +32,8 @@
             this.txtBuscarEscolas = new System.Windows.Forms.TextBox();
             this.btnBuscarEscolas = new System.Windows.Forms.Button();
             this.dgvBuscadeEscolas = new System.Windows.Forms.DataGridView();
-            this.btnSairBuscaEscolas = new System.Windows.Forms.Button();
+            this.btnExcluirEscola = new System.Windows.Forms.Button();
+            this.btnEditarEscola = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeEscolas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,22 +72,33 @@
             this.dgvBuscadeEscolas.Size = new System.Drawing.Size(809, 232);
             this.dgvBuscadeEscolas.TabIndex = 3;
             // 
-            // btnSairBuscaEscolas
+            // btnExcluirEscola
             // 
-            this.btnSairBuscaEscolas.Location = new System.Drawing.Point(689, 427);
-            this.btnSairBuscaEscolas.Name = "btnSairBuscaEscolas";
-            this.btnSairBuscaEscolas.Size = new System.Drawing.Size(75, 23);
-            this.btnSairBuscaEscolas.TabIndex = 4;
-            this.btnSairBuscaEscolas.Text = "Sair";
-            this.btnSairBuscaEscolas.UseVisualStyleBackColor = true;
-            this.btnSairBuscaEscolas.Click += new System.EventHandler(this.btnSairBuscaEscolas_Click);
+            this.btnExcluirEscola.Location = new System.Drawing.Point(720, 103);
+            this.btnExcluirEscola.Name = "btnExcluirEscola";
+            this.btnExcluirEscola.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluirEscola.TabIndex = 5;
+            this.btnExcluirEscola.Text = "Excluir";
+            this.btnExcluirEscola.UseVisualStyleBackColor = true;
+            this.btnExcluirEscola.Click += new System.EventHandler(this.btnExcluirEscola_Click);
+            // 
+            // btnEditarEscola
+            // 
+            this.btnEditarEscola.Location = new System.Drawing.Point(626, 103);
+            this.btnEditarEscola.Name = "btnEditarEscola";
+            this.btnEditarEscola.Size = new System.Drawing.Size(75, 23);
+            this.btnEditarEscola.TabIndex = 6;
+            this.btnEditarEscola.Text = "Editar";
+            this.btnEditarEscola.UseVisualStyleBackColor = true;
+            this.btnEditarEscola.Click += new System.EventHandler(this.btnEditarEscola_Click);
             // 
             // frmBuscadeEscola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 484);
-            this.Controls.Add(this.btnSairBuscaEscolas);
+            this.Controls.Add(this.btnEditarEscola);
+            this.Controls.Add(this.btnExcluirEscola);
             this.Controls.Add(this.dgvBuscadeEscolas);
             this.Controls.Add(this.btnBuscarEscolas);
             this.Controls.Add(this.txtBuscarEscolas);
@@ -105,6 +117,7 @@
         private System.Windows.Forms.TextBox txtBuscarEscolas;
         private System.Windows.Forms.Button btnBuscarEscolas;
         private System.Windows.Forms.DataGridView dgvBuscadeEscolas;
-        private System.Windows.Forms.Button btnSairBuscaEscolas;
+        private System.Windows.Forms.Button btnExcluirEscola;
+        private System.Windows.Forms.Button btnEditarEscola;
     }
 }

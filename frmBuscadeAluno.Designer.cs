@@ -32,7 +32,6 @@
             this.txtBuscarAluno = new System.Windows.Forms.TextBox();
             this.btnBuscarAluno = new System.Windows.Forms.Button();
             this.dgvBuscadeAluno = new System.Windows.Forms.DataGridView();
-            this.btnSairBuscaAluno = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeAluno)).BeginInit();
@@ -73,16 +72,6 @@
             this.dgvBuscadeAluno.Size = new System.Drawing.Size(811, 270);
             this.dgvBuscadeAluno.TabIndex = 3;
             // 
-            // btnSairBuscaAluno
-            // 
-            this.btnSairBuscaAluno.Location = new System.Drawing.Point(708, 432);
-            this.btnSairBuscaAluno.Name = "btnSairBuscaAluno";
-            this.btnSairBuscaAluno.Size = new System.Drawing.Size(75, 23);
-            this.btnSairBuscaAluno.TabIndex = 4;
-            this.btnSairBuscaAluno.Text = "Sair";
-            this.btnSairBuscaAluno.UseVisualStyleBackColor = true;
-            this.btnSairBuscaAluno.Click += new System.EventHandler(this.btnSairBuscaAluno_Click);
-            // 
             // btnEditar
             // 
             this.btnEditar.Location = new System.Drawing.Point(539, 98);
@@ -110,7 +99,6 @@
             this.ClientSize = new System.Drawing.Size(809, 481);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnSairBuscaAluno);
             this.Controls.Add(this.dgvBuscadeAluno);
             this.Controls.Add(this.btnBuscarAluno);
             this.Controls.Add(this.txtBuscarAluno);
@@ -129,7 +117,6 @@
         private System.Windows.Forms.TextBox txtBuscarAluno;
         private System.Windows.Forms.Button btnBuscarAluno;
         private System.Windows.Forms.DataGridView dgvBuscadeAluno;
-        private System.Windows.Forms.Button btnSairBuscaAluno;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
     }

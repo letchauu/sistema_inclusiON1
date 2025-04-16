@@ -115,13 +115,14 @@ namespace sistema_inclusiON
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            
             if (dgvBuscadeAluno.SelectedRows.Count > 0)
             {
                 //Pega o id do aluno selecionado 
                 int idAluno = Convert.ToInt32(dgvBuscadeAluno.SelectedRows[0].Cells["idAluno"].Value);
 
                 //Abre o formulário de cadastro com os dados do aluno
-                frmAlunos frm = new frmAlunos(idAluno);
+                CadastrodeAluno frm = new CadastrodeAluno(idAluno);
                 frm.ShowDialog();
 
                 //Atualiza a lista após edição
@@ -133,6 +134,7 @@ namespace sistema_inclusiON
                 MessageBox.Show("Selecione um aluno para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+            
             }
         }
     }

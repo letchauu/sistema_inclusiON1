@@ -13,9 +13,48 @@ namespace sistema_inclusiON
 {
     public partial class frmCadastrodeUsuario: Form
     {
-        public frmCadastrodeUsuario()
+        int idUsuario = 0;
+        public frmCadastrodeUsuario(int idUsuario)
         {
             InitializeComponent();
+            this.idUsuario = idUsuario;
+
+            if (this.idUsuario > 0) ;
+            GetUsuario(idUsuario);
+        }
+        private void GetUsuario(int idUsuario)
+        {
+            try
+            {
+
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                {
+                    cn.Open();
+                    var sql = "select * from usuarios where idUsuario=" + idUsuario;
+                    using (SqlCommand cmd = new SqlCommand(sql, cn))
+                    {
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                            if (dr.HasRows)
+                            {
+                                if (dr.Read())
+                                {
+                                    txtNomeUsuario.Text = dr["nomeUsuario"].ToString();
+                                    txtEmailUsuario.Text = dr["emailUsuario"].ToString();
+                                    txtSenhaUsuario.Text = dr["senhaUsuario"].ToString();
+                                    txtLogin.Text = dr["loginUsuario"].ToString();
+                                    
+
+                                }
+                            }
+                    }
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dados não atualizados.\n\n" + ex.Message);
+            }
         }
 
         private void btnSalvarUsuario_Click(object sender, EventArgs e)
@@ -55,6 +94,12 @@ namespace sistema_inclusiON
         private void btnSairUsuario_Click(object sender, EventArgs e)
         {
             frmMenuPrincipal frm = new frmMenuPrincipal();
+            frm.ShowDialog();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            frmBuscadeUsuario frm = new frmBuscadeUsuario();
             frm.ShowDialog();
         }
     }

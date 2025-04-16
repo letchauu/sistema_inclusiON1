@@ -54,7 +54,7 @@ namespace sistema_inclusiON
 
                 e.Graphics.DrawString(row.Cells["idAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda, y);
                 e.Graphics.DrawString(row.Cells["nomeAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 50, y);
-                e.Graphics.DrawString(row.Cells["emailAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 250, y);
+               // e.Graphics.DrawString(row.Cells["emailAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 250, y);
 
                 y += linhaAltura;
 

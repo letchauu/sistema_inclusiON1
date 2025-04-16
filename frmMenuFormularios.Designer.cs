@@ -43,7 +43,7 @@
             this.btnAlunosLaudados.Name = "btnAlunosLaudados";
             this.btnAlunosLaudados.Size = new System.Drawing.Size(100, 38);
             this.btnAlunosLaudados.TabIndex = 0;
-            this.btnAlunosLaudados.Text = "Alunos Laudados";
+            this.btnAlunosLaudados.Text = "Alunos ";
             this.btnAlunosLaudados.UseVisualStyleBackColor = true;
             this.btnAlunosLaudados.Click += new System.EventHandler(this.btnAlunosLaudados_Click);
             // 

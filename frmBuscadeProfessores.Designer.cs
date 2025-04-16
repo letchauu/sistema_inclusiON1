@@ -31,8 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscarProfessor = new System.Windows.Forms.TextBox();
             this.btnBuscarProfessor = new System.Windows.Forms.Button();
-            this.btnSairBuscaProfessor = new System.Windows.Forms.Button();
             this.dgvBuscadeProfessor = new System.Windows.Forms.DataGridView();
+            this.btnEditarBusca = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeProfessor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,16 +64,6 @@
             this.btnBuscarProfessor.UseVisualStyleBackColor = true;
             this.btnBuscarProfessor.Click += new System.EventHandler(this.btnBuscarProfessor_Click);
             // 
-            // btnSairBuscaProfessor
-            // 
-            this.btnSairBuscaProfessor.Location = new System.Drawing.Point(712, 451);
-            this.btnSairBuscaProfessor.Name = "btnSairBuscaProfessor";
-            this.btnSairBuscaProfessor.Size = new System.Drawing.Size(75, 23);
-            this.btnSairBuscaProfessor.TabIndex = 3;
-            this.btnSairBuscaProfessor.Text = "Sair";
-            this.btnSairBuscaProfessor.UseVisualStyleBackColor = true;
-            this.btnSairBuscaProfessor.Click += new System.EventHandler(this.btnSairBuscaProfessor_Click);
-            // 
             // dgvBuscadeProfessor
             // 
             this.dgvBuscadeProfessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -81,13 +72,34 @@
             this.dgvBuscadeProfessor.Size = new System.Drawing.Size(816, 279);
             this.dgvBuscadeProfessor.TabIndex = 4;
             // 
+            // btnEditarBusca
+            // 
+            this.btnEditarBusca.Location = new System.Drawing.Point(591, 107);
+            this.btnEditarBusca.Name = "btnEditarBusca";
+            this.btnEditarBusca.Size = new System.Drawing.Size(75, 23);
+            this.btnEditarBusca.TabIndex = 5;
+            this.btnEditarBusca.Text = "Editar";
+            this.btnEditarBusca.UseVisualStyleBackColor = true;
+            this.btnEditarBusca.Click += new System.EventHandler(this.btnEditarBusca_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Location = new System.Drawing.Point(692, 108);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 6;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
             // frmBuscadeProfessores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 486);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnEditarBusca);
             this.Controls.Add(this.dgvBuscadeProfessor);
-            this.Controls.Add(this.btnSairBuscaProfessor);
             this.Controls.Add(this.btnBuscarProfessor);
             this.Controls.Add(this.txtBuscarProfessor);
             this.Controls.Add(this.label1);
@@ -104,7 +116,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscarProfessor;
         private System.Windows.Forms.Button btnBuscarProfessor;
-        private System.Windows.Forms.Button btnSairBuscaProfessor;
         private System.Windows.Forms.DataGridView dgvBuscadeProfessor;
+        private System.Windows.Forms.Button btnEditarBusca;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

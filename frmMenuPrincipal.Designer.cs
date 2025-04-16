@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAlunos = new System.Windows.Forms.Button();
             this.btnEscolas = new System.Windows.Forms.Button();
             this.btnCuidadores = new System.Windows.Forms.Button();
             this.btnEstagiarios = new System.Windows.Forms.Button();
@@ -36,11 +35,9 @@
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnCadAlunos = new System.Windows.Forms.Button();
             this.btnRelatorios = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -48,9 +45,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAluno1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -59,18 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAlunos
-            // 
-            this.btnAlunos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(151)))), ((int)(((byte)(166)))));
-            this.btnAlunos.ForeColor = System.Drawing.Color.White;
-            this.btnAlunos.Location = new System.Drawing.Point(59, 102);
-            this.btnAlunos.Name = "btnAlunos";
-            this.btnAlunos.Size = new System.Drawing.Size(75, 23);
-            this.btnAlunos.TabIndex = 0;
-            this.btnAlunos.Text = "Alunos";
-            this.btnAlunos.UseVisualStyleBackColor = false;
-            this.btnAlunos.Click += new System.EventHandler(this.btnAlunos_Click);
             // 
             // btnEscolas
             // 
@@ -156,18 +141,6 @@
             this.btnRelatorios.UseVisualStyleBackColor = false;
             this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(151)))), ((int)(((byte)(166)))));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(194, 334);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 8;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // btnSair
             // 
             this.btnSair.Location = new System.Drawing.Point(560, 397);
@@ -181,7 +154,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::sistema_inclusiON.Properties.Resources.INCLUSION_LOGO;
-            this.pictureBox10.Location = new System.Drawing.Point(469, 68);
+            this.pictureBox10.Location = new System.Drawing.Point(490, 72);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(217, 206);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,16 +170,6 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 18;
             this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::sistema_inclusiON.Properties.Resources.lupa;
-            this.pictureBox8.Location = new System.Drawing.Point(194, 257);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(74, 67);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -278,15 +241,25 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAluno1
+            // 
+            this.btnAluno1.Location = new System.Drawing.Point(59, 97);
+            this.btnAluno1.Name = "btnAluno1";
+            this.btnAluno1.Size = new System.Drawing.Size(75, 23);
+            this.btnAluno1.TabIndex = 20;
+            this.btnAluno1.Text = "button1";
+            this.btnAluno1.UseVisualStyleBackColor = true;
+            this.btnAluno1.Click += new System.EventHandler(this.btnAluno1_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(213)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(698, 488);
+            this.Controls.Add(this.btnAluno1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -295,7 +268,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnRelatorios);
             this.Controls.Add(this.btnCadAlunos);
             this.Controls.Add(this.btnUsuarios);
@@ -303,12 +275,10 @@
             this.Controls.Add(this.btnEstagiarios);
             this.Controls.Add(this.btnCuidadores);
             this.Controls.Add(this.btnEscolas);
-            this.Controls.Add(this.btnAlunos);
             this.Name = "frmMenuPrincipal";
             this.Text = "Menu Principal";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -321,8 +291,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnAlunos;
         private System.Windows.Forms.Button btnEscolas;
         private System.Windows.Forms.Button btnCuidadores;
         private System.Windows.Forms.Button btnEstagiarios;
@@ -330,7 +298,6 @@
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Button btnCadAlunos;
         private System.Windows.Forms.Button btnRelatorios;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -339,8 +306,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button btnAluno1;
     }
 }

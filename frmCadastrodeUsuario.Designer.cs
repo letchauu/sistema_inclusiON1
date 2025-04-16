@@ -38,11 +38,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSairUsuario = new System.Windows.Forms.Button();
-            this.btnExcluirUsuario = new System.Windows.Forms.Button();
-            this.btnAlterarUsuario = new System.Windows.Forms.Button();
             this.btnSalvarUsuario = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtIdUsuario
@@ -121,7 +120,7 @@
             // 
             // btnSairUsuario
             // 
-            this.btnSairUsuario.Location = new System.Drawing.Point(431, 381);
+            this.btnSairUsuario.Location = new System.Drawing.Point(690, 381);
             this.btnSairUsuario.Name = "btnSairUsuario";
             this.btnSairUsuario.Size = new System.Drawing.Size(75, 23);
             this.btnSairUsuario.TabIndex = 9;
@@ -129,27 +128,9 @@
             this.btnSairUsuario.UseVisualStyleBackColor = true;
             this.btnSairUsuario.Click += new System.EventHandler(this.btnSairUsuario_Click);
             // 
-            // btnExcluirUsuario
-            // 
-            this.btnExcluirUsuario.Location = new System.Drawing.Point(545, 381);
-            this.btnExcluirUsuario.Name = "btnExcluirUsuario";
-            this.btnExcluirUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluirUsuario.TabIndex = 10;
-            this.btnExcluirUsuario.Text = "Excluir";
-            this.btnExcluirUsuario.UseVisualStyleBackColor = true;
-            // 
-            // btnAlterarUsuario
-            // 
-            this.btnAlterarUsuario.Location = new System.Drawing.Point(666, 381);
-            this.btnAlterarUsuario.Name = "btnAlterarUsuario";
-            this.btnAlterarUsuario.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterarUsuario.TabIndex = 11;
-            this.btnAlterarUsuario.Text = "Alterar";
-            this.btnAlterarUsuario.UseVisualStyleBackColor = true;
-            // 
             // btnSalvarUsuario
             // 
-            this.btnSalvarUsuario.Location = new System.Drawing.Point(327, 381);
+            this.btnSalvarUsuario.Location = new System.Drawing.Point(424, 381);
             this.btnSalvarUsuario.Name = "btnSalvarUsuario";
             this.btnSalvarUsuario.Size = new System.Drawing.Size(75, 23);
             this.btnSalvarUsuario.TabIndex = 12;
@@ -173,16 +154,25 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Login";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(551, 381);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 15;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // frmCadastrodeUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 457);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.btnSalvarUsuario);
-            this.Controls.Add(this.btnAlterarUsuario);
-            this.Controls.Add(this.btnExcluirUsuario);
             this.Controls.Add(this.btnSairUsuario);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -212,10 +202,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSairUsuario;
-        private System.Windows.Forms.Button btnExcluirUsuario;
-        private System.Windows.Forms.Button btnAlterarUsuario;
         private System.Windows.Forms.Button btnSalvarUsuario;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

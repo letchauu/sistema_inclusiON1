@@ -1,6 +1,6 @@
 ﻿namespace sistema_inclusiON
 {
-    partial class frmBuscadeEstagiario
+    partial class frmBuscadeUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,83 +29,83 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtBuscarEstagiario = new System.Windows.Forms.TextBox();
-            this.btnBuscarEstagiario = new System.Windows.Forms.Button();
-            this.dgvBuscadeEstagiarios = new System.Windows.Forms.DataGridView();
+            this.txtBuscarUsuarios = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeEstagiarios)).BeginInit();
+            this.dgvBuscadeUsuarios = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(125, 26);
+            this.label1.Location = new System.Drawing.Point(89, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 36);
+            this.label1.Size = new System.Drawing.Size(236, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Buscar Estagiário";
+            this.label1.Text = "Busca de Usuários";
             // 
-            // txtBuscarEstagiario
+            // txtBuscarUsuarios
             // 
-            this.txtBuscarEstagiario.Location = new System.Drawing.Point(99, 86);
-            this.txtBuscarEstagiario.Name = "txtBuscarEstagiario";
-            this.txtBuscarEstagiario.Size = new System.Drawing.Size(350, 20);
-            this.txtBuscarEstagiario.TabIndex = 1;
+            this.txtBuscarUsuarios.Location = new System.Drawing.Point(44, 81);
+            this.txtBuscarUsuarios.Name = "txtBuscarUsuarios";
+            this.txtBuscarUsuarios.Size = new System.Drawing.Size(367, 20);
+            this.txtBuscarUsuarios.TabIndex = 1;
             // 
-            // btnBuscarEstagiario
+            // btnBuscar
             // 
-            this.btnBuscarEstagiario.Location = new System.Drawing.Point(476, 84);
-            this.btnBuscarEstagiario.Name = "btnBuscarEstagiario";
-            this.btnBuscarEstagiario.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarEstagiario.TabIndex = 2;
-            this.btnBuscarEstagiario.Text = "Buscar";
-            this.btnBuscarEstagiario.UseVisualStyleBackColor = true;
-            this.btnBuscarEstagiario.Click += new System.EventHandler(this.btnBuscarEstagiario_Click);
-            // 
-            // dgvBuscadeEstagiarios
-            // 
-            this.dgvBuscadeEstagiarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBuscadeEstagiarios.Location = new System.Drawing.Point(1, 141);
-            this.dgvBuscadeEstagiarios.Name = "dgvBuscadeEstagiarios";
-            this.dgvBuscadeEstagiarios.Size = new System.Drawing.Size(803, 224);
-            this.dgvBuscadeEstagiarios.TabIndex = 4;
+            this.btnBuscar.Location = new System.Drawing.Point(436, 78);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(581, 84);
+            this.btnEditar.Location = new System.Drawing.Point(541, 78);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 5;
+            this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(691, 86);
+            this.btnExcluir.Location = new System.Drawing.Point(648, 78);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 6;
+            this.btnExcluir.TabIndex = 4;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
-            // frmBuscadeEstagiario
+            // dgvBuscadeUsuarios
+            // 
+            this.dgvBuscadeUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBuscadeUsuarios.Location = new System.Drawing.Point(1, 144);
+            this.dgvBuscadeUsuarios.Name = "dgvBuscadeUsuarios";
+            this.dgvBuscadeUsuarios.Size = new System.Drawing.Size(799, 213);
+            this.dgvBuscadeUsuarios.TabIndex = 5;
+            // 
+            // frmBuscadeUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 461);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvBuscadeUsuarios);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.dgvBuscadeEstagiarios);
-            this.Controls.Add(this.btnBuscarEstagiario);
-            this.Controls.Add(this.txtBuscarEstagiario);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txtBuscarUsuarios);
             this.Controls.Add(this.label1);
-            this.Name = "frmBuscadeEstagiario";
-            this.Text = "Busca de Estagiarios";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeEstagiarios)).EndInit();
+            this.Name = "frmBuscadeUsuario";
+            this.Text = "frmBuscadeUsuario";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBuscadeUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,10 +114,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBuscarEstagiario;
-        private System.Windows.Forms.Button btnBuscarEstagiario;
-        private System.Windows.Forms.DataGridView dgvBuscadeEstagiarios;
+        private System.Windows.Forms.TextBox txtBuscarUsuarios;
+        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.DataGridView dgvBuscadeUsuarios;
     }
 }

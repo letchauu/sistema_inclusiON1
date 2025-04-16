@@ -13,9 +13,49 @@ namespace sistema_inclusiON
 {
     public partial class frmCuidadores: Form
     {
-        public frmCuidadores()
+        int idCuidador = 0;
+        public frmCuidadores(int idCuidador)
         {
             InitializeComponent();
+            this.idCuidador = idCuidador;
+            if (this.idCuidador > 0) ;
+            GetCuidador(idCuidador);
+        }
+        private void GetCuidador(int idCuidador)
+        {
+            try
+            {
+
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                {
+                    cn.Open();
+                    var sql = "select * from cuidadores where idCuidador=" + idCuidador;
+                    using (SqlCommand cmd = new SqlCommand(sql, cn))
+                    {
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                            if (dr.HasRows)
+                            {
+                                if (dr.Read())
+                                {
+                                    txtNomeCuidadores.Text = dr["nomeCuidador"].ToString();
+                                    txtNomeSocial.Text = dr["nomeSocialCuidador"].ToString();
+                                    txtEnderecoCuidador.Text = dr["enderecoCuidador"].ToString();
+                                    txtCepCuidador.Text = dr["cepCuidador"].ToString();
+                                    txtCidadeCuidador.Text = dr["cidadeCuidador"].ToString();
+                                    txtTelefoneCuidador.Text = dr["telefoneCuidador"].ToString();
+                                    txtDataNascCuidador.Text = dr["dataNascCuidador"].ToString();
+                                    txtCorem.Text = dr["coremCuidador"].ToString();
+                                }
+                            }
+                    }
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dados não atualizados.\n\n" + ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -59,6 +99,18 @@ namespace sistema_inclusiON
             {
                 MessageBox.Show("Dados não salvos.\n\n" + ex.Message); //Exibe uma mensagem de erro ao usuário, incluindo a mensagem de exceção (ex.Message)
             }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            frmBuscadeCuidadores frm = new frmBuscadeCuidadores();
+            frm.ShowDialog();
+        }
+
+        private void btnSairCuidadores_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal frm = new frmMenuPrincipal();
+            frm.ShowDialog();
         }
     }
 }
