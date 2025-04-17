@@ -19,8 +19,8 @@ namespace sistema_inclusiON
 
         private void btnAlunos_Click(object sender, EventArgs e)
         {
-            /*frmCadAluno frm = new frmCadAluno();
-            frm.ShowDialog();*/
+            CadastrodeAluno frm = new CadastrodeAluno(0);
+            frm.ShowDialog();
         }
 
         private void btnEscolas_Click(object sender, EventArgs e)
@@ -73,8 +73,8 @@ namespace sistema_inclusiON
 
         private void btnAluno1_Click(object sender, EventArgs e)
         {
-            /*frmCadAluno frm = new frmCadAluno();
-            frm.ShowDialog();*/
+            CadastrodeAluno frm = new CadastrodeAluno(0);
+            frm.ShowDialog();
         }
     }
  }

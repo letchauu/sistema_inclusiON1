@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panelRelatorio = new System.Windows.Forms.Panel();
-            this.dgvAlunos = new System.Windows.Forms.DataGridView();
-            this.btnImprimir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.dgvAlunos = new System.Windows.Forms.DataGridView();
             this.panelRelatorio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).BeginInit();
             this.SuspendLayout();
@@ -46,13 +46,15 @@
             this.panelRelatorio.Size = new System.Drawing.Size(902, 418);
             this.panelRelatorio.TabIndex = 0;
             // 
-            // dgvAlunos
+            // label1
             // 
-            this.dgvAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlunos.Location = new System.Drawing.Point(3, 87);
-            this.dgvAlunos.Name = "dgvAlunos";
-            this.dgvAlunos.Size = new System.Drawing.Size(896, 235);
-            this.dgvAlunos.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(269, 39);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Relatório de Alunos";
             // 
             // btnImprimir
             // 
@@ -64,15 +66,13 @@
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
-            // label1
+            // dgvAlunos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(72, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 39);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Relatório de Alunos";
+            this.dgvAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlunos.Location = new System.Drawing.Point(3, 87);
+            this.dgvAlunos.Name = "dgvAlunos";
+            this.dgvAlunos.Size = new System.Drawing.Size(896, 235);
+            this.dgvAlunos.TabIndex = 0;
             // 
             // frmRelAlunos
             // 
@@ -82,6 +82,7 @@
             this.Controls.Add(this.panelRelatorio);
             this.Name = "frmRelAlunos";
             this.Text = "frmRelAlunos";
+            this.Load += new System.EventHandler(this.frmRelAlunos_Load);
             this.panelRelatorio.ResumeLayout(false);
             this.panelRelatorio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).EndInit();

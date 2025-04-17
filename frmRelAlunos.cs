@@ -44,7 +44,9 @@ namespace sistema_inclusiON
             // Cabeçalhos
             e.Graphics.DrawString("ID", fonteCabecalho, Brushes.Black, margemEsquerda, y);
             e.Graphics.DrawString("Nome", fonteCabecalho, Brushes.Black, margemEsquerda + 50, y);
-            e.Graphics.DrawString("Email", fonteCabecalho, Brushes.Black, margemEsquerda + 250, y);
+            e.Graphics.DrawString("Email dos pais", fonteCabecalho, Brushes.Black, margemEsquerda + 250, y);
+           // e.Graphics.DrawString("Cid", fonteCabecalho, Brushes.Black, margemEsquerda + 50, y);
+           // e.Graphics.DrawString("DescricaoCidAluno", fonteCabecalho, Brushes.Black, margemEsquerda + 250, y);
             y += linhaAltura;
 
             // Dados do DataGridView
@@ -54,8 +56,9 @@ namespace sistema_inclusiON
 
                 e.Graphics.DrawString(row.Cells["idAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda, y);
                 e.Graphics.DrawString(row.Cells["nomeAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 50, y);
-               // e.Graphics.DrawString(row.Cells["emailAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 250, y);
-
+               e.Graphics.DrawString(row.Cells["emailPaisAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 250, y);
+               // e.Graphics.DrawString(row.Cells["cidAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 50, y);
+                //e.Graphics.DrawString(row.Cells["descricaoCidAluno"].Value?.ToString(), fonteCorpo, Brushes.Black, margemEsquerda + 250, y);
                 y += linhaAltura;
 
                 // Evita que ultrapasse a página
@@ -77,6 +80,11 @@ namespace sistema_inclusiON
             PrintPreviewDialog preview = new PrintPreviewDialog();
             preview.Document = documento;
             preview.ShowDialog();
+        }
+
+        private void frmRelAlunos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

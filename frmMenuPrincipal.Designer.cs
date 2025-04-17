@@ -45,7 +45,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAluno1 = new System.Windows.Forms.Button();
+            this.btnAlunos1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -241,15 +241,15 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // btnAluno1
+            // btnAlunos1
             // 
-            this.btnAluno1.Location = new System.Drawing.Point(59, 97);
-            this.btnAluno1.Name = "btnAluno1";
-            this.btnAluno1.Size = new System.Drawing.Size(75, 23);
-            this.btnAluno1.TabIndex = 20;
-            this.btnAluno1.Text = "button1";
-            this.btnAluno1.UseVisualStyleBackColor = true;
-            this.btnAluno1.Click += new System.EventHandler(this.btnAluno1_Click);
+            this.btnAlunos1.Location = new System.Drawing.Point(59, 97);
+            this.btnAlunos1.Name = "btnAlunos1";
+            this.btnAlunos1.Size = new System.Drawing.Size(75, 23);
+            this.btnAlunos1.TabIndex = 20;
+            this.btnAlunos1.Text = "Alunos";
+            this.btnAlunos1.UseVisualStyleBackColor = true;
+            this.btnAlunos1.Click += new System.EventHandler(this.btnAluno1_Click);
             // 
             // frmMenuPrincipal
             // 
@@ -257,7 +257,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(213)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(698, 488);
-            this.Controls.Add(this.btnAluno1);
+            this.Controls.Add(this.btnAlunos1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
@@ -308,6 +308,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button btnAluno1;
+        private System.Windows.Forms.Button btnAlunos1;
     }
 }
